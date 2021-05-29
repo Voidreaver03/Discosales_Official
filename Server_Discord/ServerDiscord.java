@@ -77,8 +77,7 @@ public class ServerDiscord {
             ServerDiscord sd=new ServerDiscord(port);
             while(true){
                 System.out.println("inserire percorso a una cartella per salvataggio");
-                //path=sc.next();
-                path="C:\\Users\\annal\\Desktop";
+                path=sc.next();
                 File f=new File(path);
                 if(f.exists() && f.isDirectory()) break;
                 else System.out.println("percorso non disponibile");
